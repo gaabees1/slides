@@ -1,0 +1,35 @@
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.slides {
+    display: flex;
+    width: 110%;
+    animation: slideAnimation 10s infinite;
+
+}
+
+.slide {
+    width: 100%;
+    max-width: 900px;
+    flex-shrink: 0;
+
+}
+
+@keyframes slideAnimation {
+    0% {transform: translate(0);}
+    33% {transform: translate(-100%);}
+    66% {transform: translate(-200%);}
+    100% {transform: translate(0);}
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
